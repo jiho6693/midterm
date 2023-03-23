@@ -253,7 +253,7 @@ loader3.load(
     sca.scene.traverse( function ( child ){
       child.castShadow = true;
       child.receiveShadow = true;
-	  child.userData.link = './goodbye.html';
+	  child.userData.link = '1';
      });
 		scene.add( sca.scene );
 
