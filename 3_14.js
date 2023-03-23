@@ -67,12 +67,12 @@ plane.rotation.x = Math.PI / 2;
 scene.add( plane );
 
 const skyMaterialArray = []
-const texture_ft = new THREE.TextureLoader().load('../ex-12/bay_ft.jpg')
-const texture_bk = new THREE.TextureLoader().load('../ex-12/bay_bk.jpg')
-const texture_up = new THREE.TextureLoader().load('../ex-12/bay_up.jpg')
-const texture_dn = new THREE.TextureLoader().load('../ex-12/bay_dn.jpg')
-const texture_rt = new THREE.TextureLoader().load('../ex-12/bay_rt.jpg')
-const texture_lf = new THREE.TextureLoader().load('../ex-12/bay_lf.jpg')
+const texture_ft = new THREE.TextureLoader().load('./bay_ft.jpg')
+const texture_bk = new THREE.TextureLoader().load('./bay_bk.jpg')
+const texture_up = new THREE.TextureLoader().load('./bay_up.jpg')
+const texture_dn = new THREE.TextureLoader().load('./bay_dn.jpg')
+const texture_rt = new THREE.TextureLoader().load('./bay_rt.jpg')
+const texture_lf = new THREE.TextureLoader().load('./bay_lf.jpg')
 
 skyMaterialArray.push(
   new THREE.MeshStandardMaterial({
@@ -117,10 +117,10 @@ const skyGeometry = new THREE.BoxGeometry( 400,400,400 );
 
 //obj
 const loader01 = new GLTFLoader();
-// // load a resource
+// // load a rece
 loader01.load(
 	// resource URL
-	'source/Rock1.glb',
+	'./Rock1.glb',
 	// called when the resource is loaded
 	function ( gltf ) {
     
@@ -161,7 +161,7 @@ const loader02 = new GLTFLoader();
 // // load a resource
 loader02.load(
 	// resource URL
-	'source/Rock1.glb',
+	'./Rock1.glb',
 	// called when the resource is loaded
 	function ( gltf ) {
     
@@ -202,7 +202,7 @@ const loader1 = new GLTFLoader();
 // // load a resource
 loader1.load(
 	// resource URL
-	'source/sca.glb',
+	'./sca.glb',
 	// called when the resource is loaded
 	function ( sca ) {
     sca.scene.scale.set(0.2, 0.2, 0.2); 
@@ -242,7 +242,7 @@ const loader3 = new GLTFLoader();
 // // load a resource
 loader3.load(
 	// resource URL
-	'source/goodby.glb',
+	'./goodby.glb',
 	// called when the resource is loaded
 	function ( sca ) {
     sca.scene.scale.set(6, 6, 6); 
@@ -282,7 +282,7 @@ const loader4 = new GLTFLoader();
 // // load a resource
 loader4.load(
 	// resource URL
-	'source/seoul.gltf',
+	'./seoul.gltf',
 	// called when the resource is loaded
 	function ( sca ) {
     sca.scene.scale.set(1, 1, 1); 
@@ -322,7 +322,7 @@ const loader2 = new GLTFLoader();
 // // load a resource
 loader2.load(
 	// resource URL
-	'source/house.glb',
+	'./house.glb',
 	// called when the resource is loaded
 	function ( sca ) {
     sca.scene.scale.set(0.01, 0.01, 0.01); 
